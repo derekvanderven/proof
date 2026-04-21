@@ -22,12 +22,22 @@
       text-align: center;
     }
 
+  
     .container {
-   transform: translateY(-15vh);
+  padding: 20px;
+}
 
-      padding: 20px;
-    }
+/* Desktop stays centered or slightly adjusted if you want */
+.container {
+  transform: translateY(-15vh);
+}
 
+/* MOBILE OVERRIDE */
+@media (max-width: 768px) {
+  .container {
+    transform: translateY(20vh); /* pushes DOWN ~20% */
+  }
+}
     h1 {
       font-size: clamp(1.5rem, 4vw, 3rem);
       font-weight: 400;
